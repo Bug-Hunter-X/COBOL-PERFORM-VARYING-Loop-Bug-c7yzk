@@ -1,0 +1,1 @@
+This repository contains a simple COBOL program that demonstrates a potential bug in the PERFORM VARYING loop. The program is designed to count from 1 to 100, but it can fail if the initial value of the loop variable is greater than 100. The solution demonstrates how to fix this bug by checking the initial value of the loop variable before starting the loop.

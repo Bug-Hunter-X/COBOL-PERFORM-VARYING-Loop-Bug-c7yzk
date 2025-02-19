@@ -1,0 +1,12 @@
+IF WS-INDEX > 100 THEN
+    DISPLAY "The initial value of WS-INDEX is greater than 100. The loop will not execute."
+    MOVE 0 TO WS-COUNTER
+ELSE
+    MOVE ZERO TO WS-COUNTER.
+
+    PERFORM VARYING WS-INDEX FROM 1 BY 1 UNTIL WS-INDEX > 100
+        ADD 1 TO WS-COUNTER
+    END-PERFORM.
+
+    DISPLAY "The value of WS-COUNTER is: " WS-COUNTER
+END-IF.
